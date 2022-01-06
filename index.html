@@ -1,12 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AquaScreen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>Aquascreen</title>
+
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!--[if !mso]><!-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <!--<![endif]-->
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap');
+
+        :root {
+          color-scheme: light;
+          supported-color-schemes: light;
+        }
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        #MessageViewBody, #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a[x-apple-data-detectors],
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        .im {
+            color: inherit !important;
+        }
+
+        img.g-img + div {
+            display: none !important;
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+
+    <style>
+
+	    .button-td,
+	    .button-a {
+	        transition: all 100ms ease-in;
+	    }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #555555 !important;
+	        border-color: #555555 !important;
+	    }
+
+	    @media screen and (max-width: 600px) {
+
+        .email-container p {
+            font-size: 17px !important;
+        }
+
+        .email-container {
+            width: 100% !important;
+            margin: auto !important;
+        }
+
+        .stack-column,
+        .stack-column-center {
+            display: block !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            direction: ltr !important;
+        }
+        
+        .stack-column-center {
+            text-align: center !important;
+        }
+
+        .center-on-narrow {
+            text-align: center !important;
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            float: none !important;
+        }
+        table.center-on-narrow {
+            display: inline-block !important;
+        }
+
+        .np{
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+	    }
+
+    </style>
+
 </head>
-<body>
-  
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+	<center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #222222;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+          <!--[if mso]>
+          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
+          <tr>
+          <td>
+          <![endif]-->
+
+	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+            <tr>
+              <td style="padding: 30px 0; text-align: center; background: #1EC8BE;">
+                <a href="https://www.aquascreen.com/"><img src="https://mailer.aquascreenkits.com/uploads/1641459274.png" width="106" height="36" alt="alt_text" border="0" style="height: auto;"></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #ffffff;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px 85px; font-family: 'Poppins', sans-serif; font-size: 15px; line-height: 20px; color: #000000;" class="np">
+                      <h1 style="line-height: 117.5%; text-transform: uppercase; text-align: center; margin: 0;">
+                        <span style="font-weight: 700; font-size: 28px;">Is Your Water <span style="color: #14AFB1">Free</span> from </span>
+                        <span style="font-weight: 900; font-size: 44px; line-height: 130%">Contaminants </span>
+                        <span style="font-weight: 300; font-size: 28px; letter-spacing: 6px;">and Safe to Drink? </span>
+                      </h1>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #ffffff;">
+                <img src="https://mailer.aquascreenkits.com/uploads/1641459331.png" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;" class="g-img">
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #ffffff;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px 60px; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 700; line-height: 1.3; color: #000000;" class="np">
+                      <h2 style="line-height: 1.3; text-align: center; margin: 0;">
+                        <span style="font-weight: 700; font-size: 18px;">Our</span><br>
+                        <span style="font-weight: 900; font-size: 36px;"><span style="color: #14AFB1">Aquascreen</span> Complete Drinking Water Test Kit </span><br>
+                        <span style="font-weight: 700; font-size: 18px; line-height: 1;">contains </span><br>
+                        <span style="font-weight: 300; font-size: 24px; text-transform: uppercase; line-height: 1;">rapid, highly-accurate tests for:</span>
+                      </h2>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 0 60px 30px; background-color: #ffffff;" class="np">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" width="50%" class="stack-column-center">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                <td valign="center" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="center" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">Lead</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="center" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="center" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">Pesticides</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="top" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">Bacteria</p>
+                                  <p style="margin: 0; font-size: 12px; font-style: italic; color: #707070; line-height: 1.4;">(coliform & non-coliform: E.coli, Salmonella, Shigella, and more)</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td valign="top" width="50%" class="stack-column-center">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                <td valign="center" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="center" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">Nitrates+Nitrites</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="center" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="center" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">Chlorine</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="top" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">pH</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" width="25" style="padding: 5px 0;"><img src="https://mailer.aquascreenkits.com/uploads/1641460388.png" alt="" style="display: block;"></td>
+                                <td valign="top" style="text-align: left; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 21px; color: #555555; padding: 5px 0;">
+                                  <p style="margin: 0;">Total Hardness</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #efefef;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 30px 60px; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 700; line-height: 1; color: #000000;" class="np">
+                      <h2 style="line-height: 1; text-align: center; margin: 0;">
+                        <span style="font-weight: 700; font-size: 24px;">Only</span> 
+                        <span style="font-weight: 100; font-size: 48px;">$19.99</span><br>
+                        <span style="font-weight: 300; font-size: 18px;">for a Complete Test Kit!</span>
+                      </h2>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 10px 0 0; text-align: center; background-color: #ffffff;">
+                <a href="https://www.aquascreen.com/drinking-water-testing"><img src="https://mailer.aquascreenkits.com/uploads/1641461662.png" width="430" height="430" alt="alt_text" border="0" style="height: auto; width: 100%; max-width: 430px;"></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #ffffff;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 0 60px 10px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5; text-align: center; color: #000000;" class="np">
+                      <p>It is not a given that our tap water is safe to drink, even when provided by the city. Well water can become contaminated at any time and is not regularly checked by anyone else. Also, lead contamination can occur via the home's internal plumbing system at any time – undetectable by sight, smell, or taste.  Lead outbreaks seem to be happening every few months, even in the most developed cities. </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 20px 40px;" class="np">
+                      <!-- Button : BEGIN -->
+                      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                          <td class="button-td button-td-primary" style="border-radius: 4px; background: #1EC8BE;">
+                            <a class="button-a button-a-primary" href="https://www.youtube.com/watch?v=t-X0eIGVIE0" style="background: #1EC8BE; border: 1px solid #1EC8BE; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 700; line-height: 16px; text-decoration: none; padding: 18px 31px; color: #ffffff; text-transform: uppercase; display: block; border-radius: 4px;">Product Overview</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Button : END -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #1EC8BE;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px 55px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 300;  line-height: 1.5; text-align: center; text-transform: uppercase; color: #000000;" class="np">
+                      <p style="margin: 0;">Keep your family safe – be confident that your most important resource is fully clean.</p>
+                      <p style="font-weight: 800; color: white; font-size: 26px; margin: 25px 0 0; line-height: 1">Buy your AquaScreen kit today!</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 30px 0; text-align: center; background: #FFFFFF;">
+                  <a href="https://www.aquascreen.com/"><img src="https://mailer.aquascreenkits.com/uploads/1641462972.png" width="283" height="155" alt="alt_text" border="0" style="height: auto;"></a>
+              </td>
+            </tr>
+          </table>
+
+	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+            <tr>
+              <td style="padding: 40px; font-family: 'Poppins', sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #aaaaaa;">
+                <webversion style="color: #aaaaaa; text-decoration: underline; font-weight: bold;">View as a Web Page</webversion>
+                <br><br>
+                Silver Lake Research<br><span class="unstyle-auto-detected-links">info@aquascreen.com</span>
+                <br><br>
+                <unsubscribe style="color: #aaaaaa; text-decoration: underline;">unsubscribe</unsubscribe>
+              </td>
+            </tr>
+          </table>
+
+          <!--[if mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </div>
+
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
 </body>
 </html>

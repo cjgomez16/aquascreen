@@ -3,7 +3,7 @@ Fiverr Project
 
 ===============================================================
 
-# Content:
+## Content:
 Is Your Water Free from Contaminants and Safe to Drink?
 
 Our AquaScreen Complete Drinking Water Test Kit contains rapid, highly-accurate tests for:
@@ -24,6 +24,7 @@ Keep your family safe – be confident that your most important resource is full
 
 ===============================================================
 
--Design/Prototype on Figma
--Upload Code on Client's CKEditor
+## Tasks
+- Design/Prototype on Figma
+- Upload Code on Client's CKEditor
 - 2 days turnaround
